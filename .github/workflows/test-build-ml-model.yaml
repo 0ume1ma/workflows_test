@@ -2,10 +2,10 @@ name: Test the Build and Push ML batch model
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '5 12 * * 0'
 
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - run: echo "Building and pushing ML model"
