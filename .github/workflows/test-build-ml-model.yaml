@@ -1,0 +1,11 @@
+name: Test the Build and Push ML batch model
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building and pushing ML model"
